@@ -1,4 +1,4 @@
-# wordstr
+# wordstr.mleku.dev
 
 `wordstr` is a tool to convert a nostr bech32 encoded `nsec` or hexadecimal
 encoded secret key into a word mnemonic that can be stored in hard copy.
@@ -13,13 +13,13 @@ usage:
 to generate a word key:
 
 ```bash
-wordstr from <hex/nsec nostr secret key>
+wordstr.mleku.dev from <hex/nsec nostr secret key>
 ```
 
 to convert a word key back to hex and bech32 `nsec` format:
 
 ```bash
-wordstr to <27 word mnemonic key>
+wordstr.mleku.dev to <27 word mnemonic key>
 ```
 
 the output of the `to` command is formatted as such for easy use in scripts
@@ -44,6 +44,8 @@ or if your `GOBIN` refers to a location also present in your `PATH`, installed:
 ```bash
 go install wordstr.mleku.dev@latest
 ```
+
+you will then be able to run it with `wordstr.mleku.dev`.
 
 ## technical details of protocol
 
