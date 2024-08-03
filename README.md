@@ -5,7 +5,8 @@ encoded secret key into a word mnemonic that can be stored in hard copy.
 
 It uses the standard BIP-39 word list to represent 11 bit value elements of
 the secret key but instead of hashing it to derive the actual secret key or
-extended secret key as with bitcoin keys.
+extended secret key as with bitcoin keys, it is the exact bits of the secret 
+itself. (encrypting it would be a separate protocol to keep things simple).
 
 usage:
 
