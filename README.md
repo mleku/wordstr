@@ -19,7 +19,7 @@ wordstr.mleku.dev from <hex/nsec nostr secret key>
 to convert a word key back to hex and bech32 `nsec` format:
 
 ```bash
-wordstr.mleku.dev to <27 word mnemonic key>
+wordstr.mleku.dev to <24 word mnemonic key>
 ```
 
 the output of the `to` command is formatted as such for easy use in scripts
