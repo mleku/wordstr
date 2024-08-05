@@ -3,6 +3,7 @@ package wordstr
 import (
 	"encoding/hex"
 	"fmt"
+	"math"
 	"math/big"
 	"os"
 	"strings"
@@ -89,6 +90,8 @@ func ToNsec(places []*big.Int, words []string) (hsec, nsec string, err error) {
 			return
 		}
 	}
+	a := math.MaxUint32
+	_ = a
 	key := big.NewInt(0)
 	for i := range indexes {
 		places[i].Mul(places[i], big.NewInt(indexes[i]))
