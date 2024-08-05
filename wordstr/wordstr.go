@@ -30,7 +30,7 @@ func FromNsec(nsec string) (words string, err error) {
 	if len(nsec) == 2*secp256k1.SecKeyBytesLen {
 		if sk, err = hex.DecodeString(nsec); err != nil {
 			fmt.Fprintf(os.Stderr, "failed to decode nsec from hex form: %s\n", err)
-			os.Exit(1)
+			return
 		}
 	} else {
 		var prf string
